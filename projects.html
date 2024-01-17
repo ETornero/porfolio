@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Eric Tornero Medina | Proyectos</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>    
+    <script src="./Scripts/chargePage.js"></script>
+    <script src="./Scripts/projects.js"></script>
+    <script src="./Scripts/form.js"></script>
+    <script src="./Scripts/footer.js"></script>
+    <link rel="stylesheet" href="./Style/style.css">
+</head>  
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" id="home">Inicio</a>
+        <a href="about.html" id="about">¿Quién soy?</a>
+        <a href="projects.html" id="projects" class="selected">Proyectos</a>
+        <a id="blog" class="disabled">Blog</a>
+        <a href="#contactSection" id="contact">Contacto</a>
+    </nav>
+
+    <div id="chargeTextContainer">
+        <a id="chargeText"></a><a id="chargeLineText"></a>
+    </div>
+
+    <div id="mainContainer">
+
+        <div class="section">
+
+            <div class="title">Proyectos</div>
+
+            <div class="flex-container reverse" id="voxlandSection">
+
+                <div class="imgContainer">
+                    <img id="voxlandImage" src="./Resources/VoxlandImage.png" alt="Portada del Video" class="projectImage b-shadow" onclick="playVideo('voxlandVideo', 'voxlandImage','./Resources/VoxlandTrailer.mp4')">
+                    <video id="voxlandVideo" width="100%" controls style="display: none;" class="b-shadow">
+                        <source src="./Resources/VoxlandTrailer.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+
+                <div class="textContainer">
+                    <div class="small-title">Point&Click</div>
+                    <div class="big-title">Voxland</div>
+                    <div class="description">   
+                        VoxLand es un <span class="resaltedText">juego</span> del género <span class="resaltedText">Point and Click</span>. En esta aventura, asumiremos el papel del protagonista, 
+                        quien, después de un viaje en barca, sufre un accidente y queda varado en una isla tras el naufragio. 
+                    </div>
+                    <div class="icons">
+                        <a href="https://eric-tornero.itch.io/voxland" target="_blank"><img src="./Resources/IchioLogo.png"></a>
+                    </div>
+                </div>
+            
+            </div>
+    
+            <div class="flex-container" id="classNotesSection">
+                
+                <div class="textContainer">
+                    <div class="small-title">Plataformas</div>
+                    <div class="big-title">Class Notes </div>
+                    <div class="description">   
+                        ClassNotes es una <span class="resaltedText">demo</span> de un juego del género <span class="resaltedText">Plataformas</span> inspirado en el clásico 
+                        <span class="resaltedText">VVVVVV</span>. En él, adoptaremos el papel de uno de los bocetos de un estudiante que cobrará vida y 
+                        deberá viajar a través de las páginas de sus apuntes para recuperar frutas pixeladas.
+                    </div>
+                    <div class="icons">
+                        <a href="https://eric-tornero.itch.io/classnotes" target="_blank"><img src="./Resources/IchioLogo.png"></a>
+                    </div>
+                </div>
+                
+                <div class="imgContainer">
+                    <img id="classNotesImage" src="./Resources/ClassNotesImage.png" alt="Portada del Video" class="projectImage b-shadow" onclick="playVideo('classNotesVideo', 'classNotesImage','./Resources/ClassNotesTrailer.mp4')">
+                    <video id="classNotesVideo" width="100%" controls style="display: none;" class="b-shadow">
+                        <source src="./Resources/ClassNotesTrailer.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+
+            </div>
+
+            <div class="flex-container reverse" id="runAwaySection">
+
+                <div class="imgContainer">
+                    <img id="runAwayImage" src="./Resources/RunAwayImage.png" alt="Portada del Video" class="projectImage b-shadow" onclick="playVideo('runAwayVideo', 'runAwayImage','./Resources/RunAwayTrailer.mp4')">
+                    <video id="runAwayVideo" width="100%" controls style="display: none;" class="b-shadow">
+                        <source src="./Resources/RunAwayTrailer.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+
+                <div class="textContainer">
+                    <div class="small-title">Endless Runner</div>
+                    <div class="big-title">Run Away</div>
+                    <div class="description">   
+                        Run Away es una <span class="resaltedText">demo</span> de un juego  del género <span class="resaltedText">Endless Runner</span> en el que encarnamos a un valiente 
+                        caballero adentrándose en las murallas de un castillo para rescatar a unas elfas que han sido atrapadas. 
+                        En este emocionante juego, deberemos <span class="resaltedText">esquivar trampas, paredes y enemigos</span> que se cruzarán en nuestro camino.
+                    </div>
+                    <div class="icons">
+                        <a href="https://eric-tornero.itch.io/runknight" target="_blank"><img src="./Resources/IchioLogo.png"></a>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="flex-container" id="classNotesSection">
+                
+                <div class="textContainer">
+                    <div class="small-title">Supervivencia</div>
+                    <div class="big-title">Monkey Street</div>
+                    <div class="description">   
+                        Monkey Street es una <span class="resaltedText">demo</span> de un juego del género <span class="resaltedText">Supervivencia</span> con una perspectiva de vista aérea 
+                        <span class="resaltedText">(Top-Down)</span>, inspirado en la saga de juegos <span class="resaltedText">"Comandos"</span>. 
+                        En este juego, asumiremos el papel de un mono con la capacidad de disparar bananas. 
+                        Su misión será entrentarse a los humanos que se han convertido en zombies. 
+                    </div>
+                    <div class="icons">
+                        <a href="https://eric-tornero.itch.io/comando" target="_blank"><img src="./Resources/IchioLogo.png"></a>
+                    </div>        
+                </div>
+                
+                <div class="imgContainer">
+                    <img id="monkeyStreetImage" src="./Resources/MonkeyStreetImage.png" alt="Portada del Video" class="projectImage b-shadow" onclick="playVideo('monekeyStreetVideo', 'monkeyStreetImage','./Resources/MonkeyStreetTrailer.mp4')">
+                    <video id="monekeyStreetVideo" width="100%" controls style="display: none;" class="b-shadow">
+                        <source src="./Resources/MonkeyStreetTrailer.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+
+            </div>
+
+            <div class="flex-container reverse" id="runAwaySection">
+
+                <div class="imgContainer">
+                    <img id="phantomFashionImage" src="./Resources/PhantomFashionImage.png" alt="Portada del Video" class="projectImage b-shadow" onclick="playVideo('phantomFashionVideo', 'phantomFashionImage','./Resources/PhantomFashionTrailer.mp4')">
+                    <video id="phantomFashionVideo" width="100%" controls style="display: none;" class="b-shadow">
+                        <source src="./Resources/PhantomFashionTrailer.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+
+                <div class="textContainer">
+                    <div class="small-title">Graphic History</div>
+                    <div class="big-title">Phantom Fashion</div>
+                    <div class="description">   
+                        Phantom Fashion es una <span class="resaltedText">demo</span> de un juego de historia gráfica creado en una <span class="resaltedText">Game Jam de apenas 2 días</span>, 
+                        reconocido con el premio a la <span class="resaltedText">mejor narrativa</span> y cargado de desafiantes puzzles. 
+                    </div>
+                    <div class="icons">
+                        <a href="https://eric-tornero.itch.io/phantomfashion" target="_blank"><img src="./Resources/IchioLogo.png"></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+        <div id="contactSection" class="section grayBackground">
+
+            <div id="alert"></div>
+
+            <div class="title">Contacto</div>
+
+            <div class="formContaier">
+               
+                <div class="formDiv">
+
+                    <form id="contactUsForm" action="https://formspree.io/f/xgegvrag" method="POST" target="_blank">
+    
+                        <label for="name" class="labelForm">Nombre:</label>
+                        <input type="name" name="name" id="name" placeholder="Your Name*">
+                        <span class="error-message" id="usernameError"></span>
+
+                        <label for="email" class="labelForm">Correo electrónico:</label>
+                        <input type="email" name="email" id="email" placeholder="example@email.com*">
+                        <span class="error-message" id="passwordError"></span>
+
+                        <label for="message" class="labelForm"> Mensaje:</label>
+                        <textarea type="message" name="message" id="message" placeholder="Your message*" required></textarea>
+                    </form>
+
+                    <button onclick="validateForm()">Enviar</button>
+    
+                </div>
+
+                <div class="textContainer">
+
+                    <div class="big-title contactTitle">Datos de contacto</div>
+
+                    <div class="small-title">Mail</div>
+                    <div style="font-size: 28px; margin-bottom: 10px;">erictome11@gmail.com</div>
+
+                    <div class="small-title">Redes</div>
+                    <div class="icons" style="text-align: left; margin-top: 10px;">
+                        <a href="https://www.linkedin.com/in/erictornero/" target="_blank"><img src="./Resources/LinkedinLogo.png"></a>
+                        <a href="https://twitter.com/tornero_11/" target="_blank"><img src="./Resources/TwitterLogo.png"></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer" id="footer">
+        <p>© 2024 Eric Tornero Medina. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>

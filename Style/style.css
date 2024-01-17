@@ -1,0 +1,480 @@
+@import url('https://fonts.cdnfonts.com/css/cascadia-code');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Press+Start+2P&family=Roboto+Mono:wght@700&display=swap');
+
+/************************ GENERAL SETTINGS ************************/
+
+body {
+
+    background-color: #222222;
+    color: #ffffff;
+    font-family: 'Cascadia Code', sans-serif;
+
+    padding: 0;
+    margin: 0;
+
+    cursor: url('../Resources/DefaultCursor.png'), auto;
+}
+
+.banner {
+
+    width: 100%;
+}
+
+.grayBackground {
+
+    background-color: #272727;
+}
+
+/************************ ANIMATION ************************/
+
+#chargeTextContainer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    text-align: left;
+    font-size: 32px;
+}
+
+#mainContainer {
+
+    display: none; 
+    opacity: 0; 
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+
+/************************ NAVBAR ************************/
+
+.navbar {
+
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+    height: 50px;
+    translate: 0px -50px;
+
+    position: fixed;
+    width: 100%;
+
+    z-index: 1;
+}
+
+.navbar a {
+
+    text-decoration: none;
+    color: #222222 !important; 
+    margin: 0 15px; 
+}
+
+.navbar a:hover {
+
+    color: #ff73d5 !important; 
+}
+
+.navbar a.disabled {
+
+    cursor: default;
+    color: #c8c8c8 !important;
+    cursor: url('../Resources/DefaultCursor.png'), auto;
+}
+
+.navbar .selected {
+
+    color: #ff4fca !important; 
+}
+
+.icons {
+
+    text-align: right;
+}
+
+.icons img {
+
+    width: 32px;
+}
+
+.b-shadow {
+
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.2); 
+}
+
+a[href] {
+    
+    text-decoration: none;
+    color: #416dff;
+}
+
+a[href]:hover {
+
+    color: #00aeff;
+    cursor: url('../Resources/PointerCursor.png'), pointer;
+}
+
+.flex-container {
+
+    display: flex;
+}
+
+
+/************************ SECTIONS **************************/ 
+
+.section {
+
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 20px;
+}
+
+.projectImage {
+
+    width: 100%;
+    cursor: url('../Resources/PointerCursor.png'), pointer;
+}
+
+.imgContainer {
+
+    width: 45%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding: 50px;
+}
+
+
+.textContainer {
+
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.showMoreButton {
+
+    width: 100%;
+    justify-content: center; 
+}
+
+.title {
+
+    width: 30%;
+    display: flex;
+    margin-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 45px;
+    border-bottom: 2px solid;
+}
+
+.small-title {
+
+    font-size: 18px;
+    margin-bottom: 0px;
+    color: #ff73d5;
+}
+
+.big-title {
+
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.description {
+
+    font-size: 18px;
+    color: #aaaaaa;
+    text-align: left;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.resaltedText {
+
+    font-weight: 500; 
+    color: white;
+}
+
+
+/************************ FOOTER ************************/
+
+.footer {
+
+    background-color: #ffffff;
+    color: #222222;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    height: 50px;
+    translate: 0px 50px;
+
+    z-index: 1;
+}
+
+.footer p {
+    
+    width: 100%;
+}
+
+
+/************************ FORMULARIOS ************************/
+
+#alert {
+
+    position: fixed;
+    width: 40%;
+    top: -100px;
+    height: 50px;
+    z-index: 2;
+    left: 30%;
+    border: 1px solid #222222;
+    border-radius: 5px;
+
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    color: #222222;
+}
+
+@keyframes showAlert {
+
+    from {
+        top: -100px;
+    }
+    to {
+        top: 100px;
+    }
+}
+
+@keyframes hideAlert {
+    
+    from {
+        top: 100px;
+    }
+    to {
+        top: -100px;
+    }
+}
+
+.formContaier {
+    
+    display: flex;
+}
+
+.formDiv {
+
+    width: 100%;
+    margin: 50px;
+}
+
+label {
+
+    cursor: url('../Resources/DefaultCursor.png'), auto;
+    width:100%; 
+    font-size: 24px;
+    margin-bottom: 25px
+}
+
+input {
+
+    height: 30px; 
+}
+
+textarea {
+
+    height: 200px;  
+    resize: none; 
+}
+
+input, textarea {
+
+    font-family: 'Cascadia Code', sans-serif;
+
+    width: 100%;
+    margin-bottom: 25px; 
+    margin-top: 25px;
+    color: #222222 !important;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 5px;
+    cursor: url('../Resources/WriteCursor.png'), pointer;
+}
+
+input:focus, textarea:focus {
+    
+    outline: none;
+}
+
+::placeholder {
+
+    color: #aaaaaa;
+}
+
+button {
+
+    font-family: 'Cascadia Code', sans-serif;
+
+    font-size: 16px;
+    padding: 10px;
+    background-color: #ff4fca;
+    color: #222222;
+    font-weight: 500;
+    border: none;
+    border-radius: 2px;
+    width: 25%;
+    cursor: url('../Resources/PointerCursor.png'), pointer;
+}
+
+button:hover {
+
+    background-color: #ff73d5;
+    color: #272727;
+}
+
+.contactTitle {
+
+    margin-bottom: 20px; 
+    border-bottom: 2px solid white; 
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .contactTitle {
+
+        padding-bottom: 10px; 
+        border-bottom: 1px solid white; 
+        text-align: left;
+        width: 100%;
+    }
+    
+
+    .formContaier {
+    
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .formDiv {
+    
+        width: 98%;
+        margin: 0px;
+        margin-bottom: 50px;
+    }
+
+    .icons {
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .showMoreButton {
+
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .flex-container {
+
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .reverse {
+
+        flex-direction: column-reverse !important;
+    }
+
+    .section {
+
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 20px;
+    }
+
+    .projectImage {
+
+        width: 100%;
+        cursor: url('../Resources/PointerCursor.png'), pointer;
+    }
+    
+    .imgContainer {
+    
+        width: 100%;
+        display: block; 
+        justify-content: left; 
+        align-items: left;
+        padding: 0px;
+    }
+    
+    
+    .textContainer {
+    
+        width: 100%;
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+    }
+    
+    .showMoreButton {
+    
+        width: 100%;
+        justify-content: center; 
+    }
+    
+    .title {
+    
+        width: 100%;
+        margin-left: 0px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        font-size: 32px;
+        border-bottom: 1px solid;
+    }
+    
+    .small-title {
+    
+        margin-top: 20px;
+        font-size: 18px;
+        color: #ff73d5;
+    }
+    
+    .big-title {
+    
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+    
+    .description {
+    
+        font-size: 18px;
+        color: #aaaaaa;
+        text-align: left;
+        text-align: justify;
+        margin-top: 20px;
+    }
+    
+    .resaltedText {
+    
+        font-weight: 500; 
+        color: white;
+    }
+}

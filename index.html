@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Eric Tornero Medina | Inicio</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>    
+    <script src="./Scripts/chargePage.js"></script>
+    <script src="./Scripts/projects.js"></script>
+    <script src="./Scripts/form.js"></script>
+    <script src="./Scripts/footer.js"></script>
+    <link rel="stylesheet" href="./Style/style.css">
+</head>    
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" id="home" class="selected">Inicio</a>
+        <a href="about.html" id="about">¿Quién soy?</a>
+        <a href="projects.html" id="projects">Proyectos</a>
+        <a id="blog" class="disabled">Blog</a>
+        <a href="#contactSection" id="contact">Contacto</a>
+    </nav>
+
+    <div id="chargeTextContainer">
+        <a id="chargeText"></a><a id="chargeLineText"></a>
+    </div>
+
+    <div id="mainContainer">
+
+        <img src="./Resources/Banner.png" alt="imageBanner" class="b-shadow banner">
+
+        <div class="section grayBackground">
+
+            <div class="title">¿Quién soy?</div>
+
+            <div class="flex-container">
+
+                <div class="imgContainer">
+                    <img id="ProfileImage" src="./Resources/EricTorneroImagen.png" alt="ProfileImage" width="100%" class="b-shadow">
+                </div>
+
+                <div class="textContainer">
+                    <div class="small-title">Desarrollador de Videojuegos</div>
+                    <div class="big-title">Eric Tornero Medina</div>
+                    <div class="description">   
+                        Soy un desarrollador de videojuegos con experiencia en la creación de juegos independientes. 
+                        He tenido el placer de desarrollar algunos títulos que reflejan mi compromiso y pasión por este campo. 
+                        Disfruto explorando nuevas ideas y plasmando mi creatividad en cada proyecto. 
+                        Mi objetivo es seguir creciendo y brindar experiencias nuevas y auténticas.
+                    </div>
+                    <div class="description">
+                        <a href="about.html">Saber más</a>
+                    </div>
+                    <div class="icons">
+                        <a href="https://github.com/ETornero" target="_blank"><img src="./Resources/GitHubLogo.png"></a>
+                        <a href="https://eric-tornero.itch.io/" target="_blank"><img src="./Resources/IchioLogo.png"></a>
+                        <a href="https://www.linkedin.com/in/erictornero/" target="_blank"><img src="./Resources/LinkedinLogo.png"></a>
+                        <a href="https://www.youtube.com/@tornero.11" target="_blank"><img src="./Resources/YoutubeLogo.png"></a>
+                    </div>
+                </div>
+            
+            </div>
+
+        </div>
+
+        <div class="section">
+
+            <div class="title">Proyectos</div>
+
+            <div class="flex-container reverse" id="voxlandSection">
+
+                <div class="imgContainer">
+                    <img id="voxlandImage" src="./Resources/VoxlandImage.png" alt="Portada del Video" class="projectImage b-shadow" onclick="playVideo('voxlandVideo', 'voxlandImage','./Resources/VoxlandTrailer.mp4')">
+                    <video id="voxlandVideo" width="100%" controls style="display: none;" class="b-shadow">
+                        <source src="./Resources/VoxlandTrailer.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+
+                <div class="textContainer">
+                    <div class="small-title">Point&Click</div>
+                    <div class="big-title">Voxland</div>
+                    <div class="description">   
+                        VoxLand es un juego del género Point and Click. En esta aventura, asumiremos el papel del protagonista, 
+                        quien, después de un viaje en barca, sufre un accidente y queda varado en una isla tras el naufragio. 
+                    </div>
+                    <div class="icons">
+                        <a href="https://eric-tornero.itch.io/voxland" target="_blank"><img src="./Resources/IchioLogo.png"></a>
+                    </div>
+                </div>
+            
+            </div>
+    
+            <div class="flex-container" id="classNotesSection">
+                
+                <div class="textContainer">
+                    <div class="small-title">Plataformas</div>
+                    <div class="big-title">Class Notes </div>
+                    <div class="description">   
+                        ClassNotes es una demo de un juego del género Plataformas inspirado en el clásico VVVVVV. En él, 
+                        adoptaremos el papel de uno de los bocetos de un estudiante que cobrará vida y 
+                        deberá viajar a través de las páginas de sus apuntes para recuperar frutas pixeladas.
+                    </div>
+                    <div class="icons">
+                        <a href="https://eric-tornero.itch.io/classnotes" target="_blank"><img src="./Resources/IchioLogo.png"></a>
+                    </div>                
+                </div>
+                
+                <div class="imgContainer">
+                    <img id="classNotesImage" src="./Resources/ClassNotesImage.png" alt="Portada del Video" class="projectImage b-shadow" onclick="playVideo('classNotesVideo', 'classNotesImage','./Resources/ClassNotesTrailer.mp4')">
+                    <video id="classNotesVideo" width="100%" controls style="display: none;" class="b-shadow">
+                        <source src="./Resources/ClassNotesTrailer.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+
+            </div>
+
+            <div class="flex-container showMoreButton" id="classNotesSection">
+                <div class="description">
+                    <a href="projects.html">Ver más proyectos</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="contactSection" class="section grayBackground">
+
+            <div id="alert"></div>
+
+            <div class="title">Contacto</div>
+
+            <div class="formContaier">
+               
+                <div class="formDiv">
+
+                    <form id="contactUsForm" action="https://formspree.io/f/xgegvrag" method="POST" target="_blank">
+    
+                        <label for="name" class="labelForm">Nombre:</label>
+                        <input type="name" name="name" id="name" placeholder="Your Name*">
+                        <span class="error-message" id="usernameError"></span>
+
+                        <label for="email" class="labelForm">Correo electrónico:</label>
+                        <input type="email" name="email" id="email" placeholder="example@email.com*">
+                        <span class="error-message" id="passwordError"></span>
+
+                        <label for="message" class="labelForm"> Mensaje:</label>
+                        <textarea type="message" name="message" id="message" placeholder="Your message*" required></textarea>
+                    </form>
+
+                    <button onclick="validateForm()">Enviar</button>
+    
+                </div>
+
+                <div class="textContainer">
+
+                    <div class="big-title contactTitle">Datos de contacto</div>
+
+                    <div class="small-title">Mail</div>
+                    <div style="font-size: 28px; margin-bottom: 10px;">erictome11@gmail.com</div>
+
+                    <div class="small-title">Redes</div>
+                    <div class="icons" style="text-align: left; margin-top: 10px;">
+                        <a href="https://www.linkedin.com/in/erictornero/" target="_blank"><img src="./Resources/LinkedinLogo.png"></a>
+                        <a href="https://twitter.com/tornero_11/" target="_blank"><img src="./Resources/TwitterLogo.png"></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+              
+    </div>
+
+    <footer class="footer" id="footer">
+        <p>© 2024 Eric Tornero Medina. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>
