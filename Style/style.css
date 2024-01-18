@@ -18,7 +18,14 @@ body {
 .banner {
 
     width: 100%;
+    display: block;
 }
+
+.bannerMovil {
+
+    display: none;
+}
+
 
 .grayBackground {
 
@@ -223,6 +230,7 @@ a[href]:hover {
 .footer p {
     
     width: 100%;
+    font-size: 12px;
 }
 
 
@@ -476,5 +484,16 @@ button:hover {
     
         font-weight: 500; 
         color: white;
+    }
+
+    .banner {
+
+        display: none;
+    }
+
+    .bannerMovil {
+
+        width: 100%;
+        display: block;
     }
 }
