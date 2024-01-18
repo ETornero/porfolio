@@ -13,3 +13,23 @@ window.addEventListener('scroll', function() {
         moveElementWithTransition(footer, 0, 50, 750);
     }
 });
+
+let abierto = false;
+
+function toggleMenu() {
+
+    console.log("Entra");
+
+    let movilNavBar = document.getElementById('movilNavBar');
+
+    if (!abierto) {
+
+        movilNavBar.style.animation = 'showMovilNavBar 0.5s forwards';
+        abierto = !abierto;
+    } 
+    else {
+
+        movilNavBar.style.animation = 'hideMovilNavBar 0.5s forwards';
+        abierto = !abierto;
+    }
+}

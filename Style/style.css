@@ -96,6 +96,16 @@ body {
     color: #ff4fca !important; 
 }
 
+.navbar img {
+
+    display: none;
+}
+
+.movilNavBar {
+
+    display: none; 
+}
+
 .icons {
 
     text-align: right;
@@ -209,6 +219,28 @@ a[href]:hover {
 }
 
 
+.aboutData {
+    margin: 50px; 
+    width: 50%;
+}
+
+.dates {
+
+    margin-top: 0px;
+}
+
+.place {
+
+    margin-top: 0px; 
+    margin-bottom: 20px;
+}
+
+.aboutData .big-title {
+
+    border-bottom: 2px solid white; 
+    margin-bottom: 20px;
+}
+
 /************************ FOOTER ************************/
 
 .footer {
@@ -230,7 +262,6 @@ a[href]:hover {
 .footer p {
     
     width: 100%;
-    font-size: 12px;
 }
 
 
@@ -495,5 +526,125 @@ button:hover {
 
         width: 100%;
         display: block;
+    }
+
+    .navbar {
+
+        background-color: #ffffff;
+        justify-content: left;
+        align-items: center;
+    
+        display: none;
+        height: 50px;
+        translate: 0px -50px;
+    
+        position: fixed;
+        width: 100%;
+    
+        z-index: 1;
+    }
+
+    .navbar img {
+
+        display: block;
+        margin-left: 10px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .navbar a {
+
+        display: none;
+    }
+
+    .movilNavBar {
+
+        background-color: #ececec; 
+        padding-top: 50px; 
+        border-bottom: 2px solid black;
+
+        display: flex; 
+        flex-direction: column; 
+        position: fixed;
+        width: 100%;
+        top: -250px;
+
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+    }
+
+    .movilNavBar a{
+
+        margin: 10px;
+        color: #222222;
+    }
+
+    .movilNavBar a:hover {
+
+        color: #ff73d5; 
+    }
+    
+    .movilNavBar a.disabled {
+    
+        cursor: default;
+        color: #c8c8c8 !important;
+        cursor: url('../Resources/DefaultCursor.png'), auto;
+    }
+    
+    .movilNavBar .selected {
+
+        color: #ff4fca !important; 
+    }
+
+
+    @keyframes showMovilNavBar {
+
+        from {
+            top: -250px;
+        }
+        to {
+            top: 0px;
+        }
+    }
+    
+    @keyframes hideMovilNavBar {
+        
+        from {
+            top: 0px;
+        }
+        to {
+            top: -250px;
+        }
+    }
+    
+    .aboutData {
+        margin: 0px; 
+        width: 100%;
+    }    
+    
+    .dates {
+    
+        margin-top: 0px;
+    }
+    
+    .place {
+    
+        margin-top: 0px; 
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    
+    .aboutData .big-title {
+    
+        border-bottom: 2px solid white; 
+        margin-bottom: 20px;
+        margin-top: 50px;
+        font-size: 30px;
+    }
+
+    .footer p {
+    
+        width: 100%;
+        font-size: 12px;
     }
 }

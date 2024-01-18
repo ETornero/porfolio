@@ -36,7 +36,25 @@ $(document).ready(function(){
 
             var hash = this.hash;
 
-            // El método animate de jQuery realiza el desplazamiento suave
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+                window.location.hash = hash;
+            });
+        }
+    });
+});
+
+$(document).ready(function(){
+
+    $("#contactMovil").on('click', function(event) {
+
+        if (this.hash !== "") {
+        
+            event.preventDefault();
+            toggleMenu();
+            var hash = this.hash;
+
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
             }, 800, function(){

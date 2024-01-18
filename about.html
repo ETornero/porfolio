@@ -13,11 +13,20 @@
 </head>  
 <body>
     <nav class="navbar" id="navbar">
+        <img src="./Resources/BurgerIcone.png" alt="Menú" onclick="toggleMenu()">        
         <a href="index.html" id="home">Inicio</a>
         <a href="about.html" id="about" class="selected">¿Quién soy?</a>
         <a href="projects.html" id="projects">Proyectos</a>
         <a id="blog" class="disabled">Blog</a>
         <a href="#contactSection" id="contact">Contacto</a>
+    </nav>
+
+    <nav class="movilNavBar" id="movilNavBar">
+        <a href="index.html" id="home">Inicio</a>
+        <a href="about.html" id="about" class="selected">¿Quién soy?</a>
+        <a href="projects.html" id="projects">Proyectos</a>
+        <a id="blog" class="disabled">Blog</a>
+        <a href="#contactSection" id="contactMovil">Contacto</a>
     </nav>
 
     <div id="chargeTextContainer">
@@ -62,43 +71,43 @@
 
             <div class="flex-container">
 
-                <div style="margin: 50px; width: 50%;">
+                <div class="aboutData">
 
-                    <div class="big-title" style="border-bottom: 2px solid white; margin-bottom: 20px;">Estudios</div>
+                    <div class="big-title">Estudios</div>
 
                     <div class="small-title">Desarrollo de aplicaciones web (CFGS)</div>
-                    <div class="description" style="margin-top: 0px;">2023 - Actualidad</div>
-                    <div class="description" style="margin-top: 0px; margin-bottom: 20px;">Instituto Escuela del Trabajo de Barcelona, Barcelona</div>
+                    <div class="description dates">2023 - Actualidad</div>
+                    <div class="description place">Instituto Escuela del Trabajo de Barcelona, Barcelona</div>
 
                     <div class="small-title">Videojocs i oci digital (CFGS)</div>
-                    <div class="description" style="margin-top: 0px;">2021 - 2023</div>
-                    <div class="description" style="margin-top: 0px; margin-bottom: 20px;">Innovación en Formación Profesional, Hospitalet</div>
+                    <div class="description dates">2021 - 2023</div>
+                    <div class="description place">Innovación en Formación Profesional, Hospitalet</div>
 
                     <div class="small-title">Desarrollo de aplicaciones multiplataforma (CFGS)</div>
-                    <div class="description" style="margin-top: 0px;">2020 - 2021</div>
-                    <div class="description" style="margin-top: 0px; margin-bottom: 20px;">Institut Eugeni d'Ors, Vilafranca</div>
+                    <div class="description dates">2020 - 2021</div>
+                    <div class="description place">Institut Eugeni d'Ors, Vilafranca</div>
 
                     <div class="small-title">Sistemas microinformáticos y redes (CFGM)</div>
-                    <div class="description" style="margin-top: 0px;">2018 - 2020</div>
-                    <div class="description" style="margin-top: 0px; margin-bottom: 20px;">Ernest Lluch I Martin, Cunit</div>
+                    <div class="description dates">2018 - 2020</div>
+                    <div class="description place">Ernest Lluch I Martin, Cunit</div>
 
                 </div>
 
-                <div style="margin: 50px; width: 50%;">
+                <div class="aboutData">
 
-                    <div class="big-title" style="border-bottom: 2px solid white; margin-bottom: 20px;">Experiencia Laboral</div>
+                    <div class="big-title">Experiencia Laboral</div>
 
                     <div class="small-title">Desarrollador web</div>
-                    <div class="description" style="margin-top: 0px;">2023 - Actualidad</div>
-                    <div class="description" style="margin-top: 0px; margin-bottom: 20px;">M-automocion</div>
+                    <div class="description dates">2023 - Actualidad</div>
+                    <div class="description place">M-automocion</div>
 
                     <div class="small-title">Programador de videojuegos</div>
-                    <div class="description" style="margin-top: 0px;">2022 - 2023</div>
-                    <div class="description" style="margin-top: 0px; margin-bottom: 20px;">Ivanovich Games</div>
+                    <div class="description dates">2022 - 2023</div>
+                    <div class="description place">Ivanovich Games</div>
 
                     <div class="small-title">Técnico, reparación e instalación</div>
-                    <div class="description" style="margin-top: 0px;">2019 - 2020</div>
-                    <div class="description" style="margin-top: 0px; margin-bottom: 20px;">Imad Computers</div>
+                    <div class="description dates">2019 - 2020</div>
+                    <div class="description place">Imad Computers</div>
 
                 </div>
             
@@ -106,9 +115,9 @@
 
             <div class="flex-container">
 
-                <div style="margin: 50px; margin-top: 0px; width: 50%;">
+                <div class="aboutData">
 
-                    <div class="big-title" style="border-bottom: 2px solid white; margin-bottom: 20px;">Habilidades/Competencias</div>
+                    <div class="big-title">Habilidades</div>
 
                     <div class="description">Paquete Office</div>
 
@@ -122,9 +131,9 @@
 
                 </div>
 
-                <div style="margin: 50px; margin-top: 0px; width: 50%;">
+                <div class="aboutData">
 
-                    <div class="big-title" style="border-bottom: 2px solid white; margin-bottom: 20px;">Idiomas</div>
+                    <div class="big-title">Idiomas</div>
 
                     <div class="description"><span class="resaltedText">Castellano</span> - Nativo</div>
 
