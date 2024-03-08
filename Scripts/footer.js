@@ -11,7 +11,7 @@ window.addEventListener('scroll', function() {
     else {
 
         moveElementWithTransition(footer, 0, 50, 750);
-    }
+    }    
 });
 
 let abierto = false;
