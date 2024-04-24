@@ -70,6 +70,7 @@ body {
     width: 100%;
 
     z-index: 1;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75); 
 }
 
 .navbar a {
@@ -118,7 +119,7 @@ body {
 
 .b-shadow {
 
-    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75); 
 }
 
 a[href] {
@@ -336,12 +337,14 @@ label {
 input {
 
     height: 30px; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75); 
 }
 
 textarea {
 
     height: 200px;  
-    resize: none; 
+    resize: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75); 
 }
 
 input, textarea {
@@ -383,6 +386,7 @@ button {
     border-radius: 2px;
     width: 25%;
     cursor: url('../Resources/PointerCursor.png'), pointer;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75); 
 }
 
 button:hover {
