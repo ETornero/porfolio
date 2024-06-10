@@ -12,11 +12,11 @@ function startChronometer() {
         startTime = new Date().getTime() - (difference || 0);
         timerID = setInterval(updateChronometer, 10);
         running = true;
-        document.querySelector('#chronometer-play img').src = '/Desktop/resources/img/pauseIcone.png';
+        document.querySelector('#chronometer-play img').src = '../img/pauseIcone.png';
     }
     else {
         stopChronometer();
-        document.querySelector('#chronometer-play img').src = '/Desktop/resources/img/playIcone.png';
+        document.querySelector('#chronometer-play img').src = '../img/playIcone.png';
     }
 }
 
@@ -32,7 +32,7 @@ function resetChronometer() {
     difference = 0;
     running = false;
     document.getElementById('chronometer-counter').innerText = "00:00:00,00";
-    document.querySelector('#chronometer-play img').src = '/Desktop/resources/img/playIcone.png';
+    document.querySelector('#chronometer-play img').src = '../img/playIcone.png';
     document.getElementById('chronometer-times').innerHTML = '';
     marks = 0;
 }
@@ -55,9 +55,9 @@ function addMark() {
             td2.innerHTML = formatTime(updatedTime - lastTime);
 
             if (lastDiference > updatedTime - lastTime) {
-                td2.innerHTML += '<img src="/Desktop/resources/img/upIcone.png" width="14px" height="auto">';
+                td2.innerHTML += '<img src="../img/upIcone.png" width="14px" height="auto">';
             } else {
-                td2.innerHTML += '<img src="/Desktop/resources/img/downIcone.png" width="14px" height="auto">';
+                td2.innerHTML += '<img src="../img/downIcone.png" width="14px" height="auto">';
             }            
 
             lastDiference = updatedTime-lastTime;
