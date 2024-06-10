@@ -180,59 +180,6 @@ const apps = [
             </div>
         </div>
         `
-    },
-    {
-        "id": "5",
-        "title": "Sudoku",
-        "type":"Game",
-        "dragbarItems": ['on', 'on', 'on'],
-        "imgSrc": "/resources/img/sudokuIcone.png",
-        "imgAlt": "Sudoku icone image",
-        "imgTitle": "Sudoku icone",
-        "width": "550px",
-        "height": "550px",
-        "content": ` 
-        <div class="sudoku-windows">
-            <div class="sudoku-options">
-                <div class="option" onclick="openDifficultMenu()">Difficult</div>
-                <div class="option" onclick="restartSudoku()">Restart</div>
-                <div class="sudoku-timer" id="sudoku-timer">00:00</div>
-            </div>
-            <div id="sudoku-board" class="sudoku-board">
-                
-            </div>
-            <div class="menu close" id="sudoku-difficult-menu">
-
-            </div>
-            <div class="menu close" id="sudoku-win-menu">
-                
-            </div>
-        </div>
-        `
-    },
-    {
-        "id": "6",
-        "title": "Notes",
-        "type":"Tool",
-        "dragbarItems": ['on', 'on', 'on'],
-        "imgSrc": "/resources/img/notesIcone.png",
-        "imgAlt": "Notes icone image",
-        "imgTitle": "Notes icone",
-        "width": "600px",
-        "height": "450px",
-        "content": ` 
-        <div class="notes-windows">
-            <div class="notes-side-bar">
-                <div class="notes-add-button" onclick="addNote();">Add note</div>
-                <div class="notes-scroll" id="notes-scroll"></div>
-            </div>
-            <div class="notes-board">
-                <input name="note-title" id="note-title" type="text" value="Title">
-                <textarea name="note-text" id="note-text"></textarea>
-                <div class="notes-save-button">Save</div>
-            </div>
-        </div>
-        `
     }
 ];
 
