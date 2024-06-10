@@ -192,7 +192,7 @@ apps.unshift({
     "id": "0",
     "title": "Aplications",
     "dragbarItems": ['off', 'off', 'on'],
-    "imgSrc": "./resources/img/aplicationsIcone.png",
+    "imgSrc": "./resources/img/aplicationsicone.png",
     "imgAlt": "Aplications icone image",
     "imgTitle": "Aplications icone",
     "width": "",
