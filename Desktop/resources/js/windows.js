@@ -4,7 +4,7 @@ const apps = [
         "title": "Calculator",
         "type":"Tool",
         "dragbarItems": ['on', 'off', 'on'],
-        "imgSrc": "/resources/img/calculatorIcone.png",
+        "imgSrc": "./resources/img/calculatorIcone.png",
         "imgAlt": "Aplications icone image",
         "imgTitle": "Aplications icone",
         "width": "400px",
@@ -44,7 +44,7 @@ const apps = [
         "title": "Chronometeasdadsr",
         "type":"Tool",
         "dragbarItems": ['on', 'off', 'on'],
-        "imgSrc": "/resources/img/chronometerIcone.png",
+        "imgSrc": "./resources/img/chronometerIcone.png",
         "imgAlt": "Chronometer icone image",
         "imgTitle": "Chronometer icone",
         "width": "600px",
@@ -53,9 +53,9 @@ const apps = [
         <div class="chronometer-windows">
             <p id="chronometer-counter" class="chronometer-counter">00:00:00,00</p>
             <div class="chronometer-buttons">
-                <div id='chronometer-play' onclick="startChronometer()"><img src="/resources/img/playIcone.png" width="25px" height="25px"></div>
-                <div onclick="addMark()"><img src="/resources/img/markIcone.png" width="25px" height="25px"></div>
-                <div onclick="resetChronometer()"><img src="/resources/img/reloadIcone.png" width="25px" height="25px"></div>
+                <div id='chronometer-play' onclick="startChronometer()"><img src="./resources/img/playIcone.png" width="25px" height="25px"></div>
+                <div onclick="addMark()"><img src="./resources/img/markIcone.png" width="25px" height="25px"></div>
+                <div onclick="resetChronometer()"><img src="./resources/img/reloadIcone.png" width="25px" height="25px"></div>
             </div>
             <div class="chronometer-marks">
                 <table class="header">
@@ -77,14 +77,14 @@ const apps = [
             </div>
         </div>
 
-        <script src="/resources/js/calendar.js"></script>        `
+        <script src="./resources/js/calendar.js"></script>        `
     },
     {
         "id": "3",
         "title": "Calendar",
         "type":"Tool",
         "dragbarItems": ['on', 'off', 'on'],
-        "imgSrc": "/resources/img/calendarIcone.png",
+        "imgSrc": "./resources/img/calendarIcone.png",
         "imgAlt": "Calendar icone image",
         "imgTitle": "Calendar icone",
         "width": "600px",
@@ -94,8 +94,8 @@ const apps = [
             <div class="calendar-header">
                 <p class="calendar-title" id="calendar-title">September, 2020</p>
                 <div class="calendar-buttons">
-                    <div class="calendar-button" onclick="previousMonth()"><img src="/resources/img/leftArrow.png" width="16px" height="auto"></div>
-                    <div class="calendar-button" onclick="nextMonth()"><img src="/resources/img/rightArrow.png" width="16px" height="auto"></div>                
+                    <div class="calendar-button" onclick="previousMonth()"><img src="./resources/img/leftArrow.png" width="16px" height="auto"></div>
+                    <div class="calendar-button" onclick="nextMonth()"><img src="./resources/img/rightArrow.png" width="16px" height="auto"></div>                
                 </div>
             </div>
             <table id="calendar">
@@ -121,7 +121,7 @@ const apps = [
         "title": "Mines",
         "type":"Game",
         "dragbarItems": ['on', 'on', 'on'],
-        "imgSrc": "/resources/img/minesIcone.png",
+        "imgSrc": "./resources/img/minesIcone.png",
         "imgAlt": "Mines icone image",
         "imgTitle": "Mines icone",
         "width": "auto",
@@ -192,7 +192,7 @@ apps.unshift({
     "id": "0",
     "title": "Aplications",
     "dragbarItems": ['off', 'off', 'on'],
-    "imgSrc": "/resources/img/aplicationsIcone.png",
+    "imgSrc": "./resources/img/aplicationsIcone.png",
     "imgAlt": "Aplications icone image",
     "imgTitle": "Aplications icone",
     "width": "",
@@ -287,7 +287,7 @@ function addDragbarButtons(dragbar, newWindow, app) {
         buttonDiv.className = 'dragbar-button';
         if (buttonsState[index] == 'off') buttonDiv.style.display = 'none';
         const img = document.createElement('img');
-        img.src = `/resources/img/${buttonSrc}`;
+        img.src = `./resources/img/${buttonSrc}`;
         img.width = imgSizes[index];
         buttonDiv.appendChild(img);
 
