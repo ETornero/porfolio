@@ -87,9 +87,9 @@ const apps = [
         <div class="chronometer-windows">
             <p id="chronometer-counter" class="chronometer-counter">00:00:00,00</p>
             <div class="chronometer-buttons">
-                <div id='chronometer-play' onclick="startChronometer()"><img src="/resources/img/playIcone.png" width="25px" height="25px"></div>
-                <div onclick="addMark()"><img src="/resources/img/markIcone.png" width="25px" height="25px"></div>
-                <div onclick="resetChronometer()"><img src="/resources/img/reloadIcone.png" width="25px" height="25px"></div>
+                <div id='chronometer-play' onclick="startChronometer()"><img src="./resources/img/playIcone.png" width="25px" height="25px"></div>
+                <div onclick="addMark()"><img src="./resources/img/markIcone.png" width="25px" height="25px"></div>
+                <div onclick="resetChronometer()"><img src="./resources/img/reloadIcone.png" width="25px" height="25px"></div>
             </div>
             <div class="chronometer-marks">
                 <table class="header">
