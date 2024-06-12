@@ -13,6 +13,6 @@ function changeTheme(theme) {
 }
 
 function changeBackground(background) {
-    document.body.style.backgroundImage = 'url("/resources/img/background'+(background+1)+'.jpg")';
+    document.body.style.backgroundImage = 'url("./resources/img/background'+(background+1)+'.jpg")';
     localStorage.setItem('background', background);
 }
