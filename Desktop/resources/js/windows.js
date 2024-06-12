@@ -128,8 +128,8 @@ const apps = [
             <div class="calendar-header">
                 <p class="calendar-title" id="calendar-title">September, 2020</p>
                 <div class="calendar-buttons">
-                    <div class="calendar-button" onclick="previousMonth()"><img src="/resources/img/leftArrow.png" width="16px" height="auto"></div>
-                    <div class="calendar-button" onclick="nextMonth()"><img src="/resources/img/rightArrow.png" width="16px" height="auto"></div>                
+                    <div class="calendar-button" onclick="previousMonth()"><img src="./resources/img/leftArrow.png" width="16px" height="auto"></div>
+                    <div class="calendar-button" onclick="nextMonth()"><img src="./resources/img/rightArrow.png" width="16px" height="auto"></div>                
                 </div>
             </div>
             <table id="calendar">
