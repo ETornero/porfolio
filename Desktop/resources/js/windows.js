@@ -4,7 +4,7 @@ const apps = [
         "title": "Settings",
         "type":"Tool",
         "dragbarItems": ['on', 'off', 'on'],
-        "imgSrc": "/resources/img/settingsIcone.png",
+        "imgSrc": "./resources/img/settingsIcone.png",
         "imgAlt": "Aplications icone image",
         "imgTitle": "Aplications icone",
         "width": "auto",
@@ -38,7 +38,7 @@ const apps = [
         "title": "Calculator",
         "type":"Tool",
         "dragbarItems": ['on', 'off', 'on'],
-        "imgSrc": "/resources/img/calculatorIcone.png",
+        "imgSrc": "./resources/img/calculatorIcone.png",
         "imgAlt": "Aplications icone image",
         "imgTitle": "Aplications icone",
         "width": "400px",
@@ -78,7 +78,7 @@ const apps = [
         "title": "Chronometeasdadsr",
         "type":"Tool",
         "dragbarItems": ['on', 'off', 'on'],
-        "imgSrc": "/resources/img/chronometerIcone.png",
+        "imgSrc": "./resources/img/chronometerIcone.png",
         "imgAlt": "Chronometer icone image",
         "imgTitle": "Chronometer icone",
         "width": "600px",
@@ -118,7 +118,7 @@ const apps = [
         "title": "Calendar",
         "type":"Tool",
         "dragbarItems": ['on', 'off', 'on'],
-        "imgSrc": "/resources/img/calendarIcone.png",
+        "imgSrc": "./resources/img/calendarIcone.png",
         "imgAlt": "Calendar icone image",
         "imgTitle": "Calendar icone",
         "width": "600px",
@@ -155,7 +155,7 @@ const apps = [
         "title": "Mines",
         "type":"Game",
         "dragbarItems": ['on', 'on', 'on'],
-        "imgSrc": "/resources/img/minesIcone.png",
+        "imgSrc": "./resources/img/minesIcone.png",
         "imgAlt": "Mines icone image",
         "imgTitle": "Mines icone",
         "width": "auto",
@@ -220,7 +220,7 @@ const apps = [
         "title": "Sudoku",
         "type":"Game",
         "dragbarItems": ['on', 'on', 'on'],
-        "imgSrc": "/resources/img/sudokuIcone.png",
+        "imgSrc": "./resources/img/sudokuIcone.png",
         "imgAlt": "Sudoku icone image",
         "imgTitle": "Sudoku icone",
         "width": "550px",
@@ -249,7 +249,7 @@ const apps = [
         "title": "Notes",
         "type":"Tool",
         "dragbarItems": ['on', 'on', 'on'],
-        "imgSrc": "/resources/img/notesIcone.png",
+        "imgSrc": "./resources/img/notesIcone.png",
         "imgAlt": "Notes icone image",
         "imgTitle": "Notes icone",
         "width": "600px",
@@ -279,7 +279,7 @@ apps.unshift({
     "id": "0",
     "title": "Aplications",
     "dragbarItems": ['off', 'off', 'on'],
-    "imgSrc": "/resources/img/aplicationsIcone.png",
+    "imgSrc": "./resources/img/aplicationsIcone.png",
     "imgAlt": "Aplications icone image",
     "imgTitle": "Aplications icone",
     "width": "",
@@ -374,7 +374,7 @@ function addDragbarButtons(dragbar, newWindow, app) {
         buttonDiv.className = 'dragbar-button';
         if (buttonsState[index] == 'off') buttonDiv.style.display = 'none';
         const img = document.createElement('img');
-        img.src = `/resources/img/${buttonSrc}`;
+        img.src = `./resources/img/${buttonSrc}`;
         img.width = imgSizes[index];
         buttonDiv.appendChild(img);
 
