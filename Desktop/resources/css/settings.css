@@ -58,14 +58,14 @@
     background-color: #ffb9e2;
 }
 .selector-item#background1 {
-    background-image: url("/resources/img/background1.jpg");
+    background-image: url("../img/background1.jpg");
 }
 .selector-item#background2 {
-    background-image: url("/resources/img/background2.jpg");
+    background-image: url("../img/background2.jpg");
 }
 .selector-item#background3 {
-    background-image: url("/resources/img/background3.jpg");
+    background-image: url("../img/background3.jpg");
 }
 .selector-item#background4 {
-    background-image: url("/resources/img/background4.jpg");
+    background-image: url("../img/background4.jpg");
 }
