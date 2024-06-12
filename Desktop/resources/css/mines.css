@@ -107,6 +107,7 @@
 @keyframes openMenu {
     0% {
         opacity: 0;
+        z-index: 1;
     }
     100% {
         opacity: 1;
@@ -120,9 +121,13 @@
     0% {
         opacity: 1;
     }
+    99% {
+        z-index: 1;
+    }
     100% {
         opacity: 0;
         display: none;
+        z-index: -1;
     }
 }
 
