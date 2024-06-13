@@ -466,6 +466,7 @@ function dragControls() {
             const minLeft = 0 - (currentWindow.offsetWidth / 3);
             const maxLeft = window.innerWidth + (currentWindow.offsetWidth / 3);
 
+            const isFirefox = typeof InstallTrigger !== 'undefined';
             let newLeft, newTop;
 
             if (isFirefox) {
