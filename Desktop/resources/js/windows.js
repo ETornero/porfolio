@@ -466,8 +466,15 @@ function dragControls() {
             const minLeft = 0 - (currentWindow.offsetWidth / 3);
             const maxLeft = window.innerWidth + (currentWindow.offsetWidth / 3);
 
-            let newLeft = event.clientX - offsetX;
-            let newTop = event.clientY - offsetY;
+            let newLeft, newTop;
+
+            if (isFirefox) {
+                newLeft = event.clientX - offsetX + (currentWindow.offsetWidth / 2);
+                newTop = event.clientY - offsetY + (currentWindow.offsetHeight / 2);
+            } else {
+                newLeft = event.clientX - offsetX;
+                newTop = event.clientY - offsetY;
+            }
 
             newTop = Math.max(minTop, Math.min(newTop, maxTop));
             newLeft = Math.max(minLeft, Math.min(newLeft, maxLeft));
